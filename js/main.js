@@ -28,6 +28,9 @@ $(function () {
 
    $('input[type="file"],input[type="checkbox"],input[type="radio"],select').styler();
 
-   new WOW().init();
+   const WOW = require('wowjs');
+
+   window.wow = new WOW.WOW();
+   window.wow.init();
 
 });
